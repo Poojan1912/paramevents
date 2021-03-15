@@ -1,1 +1,1 @@
-$("#carouselExampleIndicators").carousel({interval: 2250});
+// $("#carouselExampleIndicators").carousel({interval: 2250});
