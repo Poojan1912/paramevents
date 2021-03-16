@@ -278,6 +278,9 @@
 
 /* Mobile Phone */
 @media (max-width: 764px){    
+    .css-carousel{
+        height: 800px;
+    }
 
     .css-past-events-header{
         font-size: 30px;
