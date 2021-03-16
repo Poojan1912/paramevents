@@ -149,12 +149,14 @@
 
 .css-past-events-name{
     color: #F8CFA9;
+    font-size: 25px;
 }
 
 .css-past-events-details{
     font-family: 'Dancing Script', cursive;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 20px;    
+    font-size: 20px;    
 }
 
 .css-past-events-body{
@@ -275,13 +277,15 @@
 }
 
 /* Mobile Phone */
-@media (max-width: 764px){
+@media (max-width: 764px){    
+
     .css-past-events-header{
         font-size: 30px;
     }
 
     .css-past-events-subheader{
         padding: 0px 25px;
+        font-size: 22px;
     }
 
     .css-moments-header{
