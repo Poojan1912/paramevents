@@ -11,7 +11,7 @@
 }
 
 .css-navbar{
-    background-color: #181818;
+    background-color: #161616;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.05),inset 0 -1px 0 rgba(0,0,0,.1);
     min-height: 120px;
 }
@@ -38,7 +38,7 @@
     flex-direction: column;    
     /* width: 100%;     */
     background-color: #F2B28A;
-    color: #181818;
+    color: #161616;
     font-size: 15px;
     line-height: 28px;
     padding-left: 40px;        
@@ -71,7 +71,7 @@
 }
 
 .css-contact{    
-    background-color: #181818;
+    background-color: #161616;
     text-align: center;
     color: whitesmoke;
 }
