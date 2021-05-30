@@ -1,65 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script> 
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Photography | Param Events</title>
-  </head>
-  <body>
-      <!-- NavBar Start -->
-      <nav class="navbar navbar-expand-lg navbar-dark css-navbar">
-        <a class="navbar-brand css-navbar-brand ml-5" href="#">
-          <img src="./images/Logo-Colored.png" width="200" height="77" class="d-inline-block  align-top" alt="Param Events">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse css-navbar-items" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-5">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="decoration.html">Decoration</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="photography.html">Photography</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rental.html">Rental Homes</a>
-              </li>             
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>              
-            </ul>
-        </div>
-    </nav>
-    <!-- NavBar End -->    
 
-    <!-- footer start -->
-    <footer>
-      <div class="css-contact" style="margin-bottom: 0px; padding-bottom: 0px;">
-        <div class="py-3">          
-          <h4 style="text-decoration: none; font-family: sans-serif ;">Contact Us</h4>                    
-          <p class="pt-3">+918160554061</p>
-          <p class="p-0">parampatel9099@gmail.com</p>                              
-          <a href="https://www.instagram.com/param.__.photography/" target="blank" class="mr-2"><img src="./images/icons/instagram-01.png" alt="Instagram" height="40px" width="40px"></a>
-          <a href="https://api.whatsapp.com/send?phone=918160554061" target="blank" class="mr-2"><img src="./images/icons/WA.png" alt="Whatsapp" height="40px" width="40px"></a>           
-          <a href="https://www.youtube.com/channel/UCOS5leON8SN25tVWbijG9kA" target="blank" class="mr-2"><img src="./images/icons/youtube.png" alt="YouTube" height="40px" width="40px"></a>           
-        </div>                
-      </div>      
-    </footer>        
-    <!-- footer end -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Photography | Param Events</title>
+  <style>
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NavBar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark css-navbar">
+    <a class="navbar-brand css-navbar-brand ml-5" href="#">
+      <img src="./images/Logo-Colored.png" width="200" height="77" class="d-inline-block  align-top" alt="Param Events">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse css-navbar-items" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="decoration.html">Decoration</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="photography.html">Photography</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rental.html">Rental Homes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NavBar End -->
+
+  <section class="container pb-4">
+    <div class="pt-5">
+      <h1 class="text-center" style="color: #DFBA98;">Param Photography</h1>
+      <p class="css-past-events-subheader text-dark" style="font-size: 21px;">Model Photography is where our expertise comes</p>
+    </div>      
+    <div class="row">
+      <div class="column">
+        <img src="./images/photo1.png">
+        <img src="./images/photo2.png">
+        <img src="./images/photo3.png">
+      </div>
+      <div class="column">
+        <img src="./images/photo6.png">
+        <img src="./images/photo5.png">        
+        <img src="./images/photo9.png">
+      </div>
+      <div class="column">
+        <img src="./images/photo7.png">
+        <img src="./images/photo8.png">
+        <img src="./images/photo4.png">
+      </div>
+      <div class="column">
+        <img src="./images/photo10.png">
+        <img src="./images/photo11.png">
+        <img src="./images/photo12.png">
+      </div>
+    </div>    
+  </section>
+
+  <div class="text-dark text-center">
+    <h5>Do you want to get clicked, too?</h5>
+    <a href="./contact.html"><button type="button" class="btn btn-lg css-moments-button mb-4" style="border-radius: 10px;">Reach out to us now</button></a>      
+  </div>
+
+  <!-- footer start -->
+  <footer>
+    <div class="css-contact" style="margin-bottom: 0px; padding-bottom: 0px;">
+      <div class="py-3">
+        <h4 style="text-decoration: none; font-family: sans-serif ;">Contact Us</h4>
+        <p class="pt-3">+918160554061</p>
+        <p class="p-0">parampatel9099@gmail.com</p>
+        <a href="https://www.instagram.com/param.__.photography/" target="blank" class="mr-2"><img
+            src="./images/icons/instagram-01.png" alt="Instagram" height="40px" width="40px"></a>
+        <a href="https://api.whatsapp.com/send?phone=918160554061" target="blank" class="mr-2"><img
+            src="./images/icons/WA.png" alt="Whatsapp" height="40px" width="40px"></a>
+        <a href="https://www.youtube.com/channel/UCOS5leON8SN25tVWbijG9kA" target="blank" class="mr-2"><img
+            src="./images/icons/youtube.png" alt="YouTube" height="40px" width="40px"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+</body>
